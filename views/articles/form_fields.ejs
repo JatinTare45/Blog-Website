@@ -1,0 +1,49 @@
+<div class="form-group">
+    <label for="title">Title:</label>
+    <input required value="<%=article.title%>" type="text" name="title" class="form-control">
+</div>
+<div class="form-group">
+    <label for="description">Description:</label>
+    <textarea name="description" id="description" class="form-control"><%=article.description%></textarea>
+</div>
+<div class="form-group">
+    <label for="markDown">Markdown:</label>
+    <textarea required name="markDown" id="markDown" class="form-control"><%=article.markDown%></textarea>
+</div>
+<br>
+<a href="/" class="Cancel_btn">Cancel</a>
+<button type="submit" class="SaveBtn">Save</button>
+
+<style>
+    .form-group{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:medium;
+        font-weight: bold;
+    }
+    .Cancel_btn{
+            background-color:rgb(125, 125, 124);
+            border-radius: 15px 15px 15px 15px;
+            border: none;
+            color: white;
+            padding: 5px 12px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            }
+    .SaveBtn{
+            background-color:rgb(44, 134, 224);
+            border-radius: 15px 15px 15px 15px;
+            border: none;
+            color: white;
+            padding: 5px 12px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            }
+</style>
