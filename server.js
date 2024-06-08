@@ -10,7 +10,8 @@ dotenv.config();
 
 app.use(express.static('public'));
 
-mongoose.connect('mongodb://localhost/myBlogWebsiteDatabase')
+//Use your MongoDB url to connect to your MongoDB Database.
+mongoose.connect('MONGODB_URL')
 app.set('view engine','ejs')
 app.use(express.urlencoded({extended:false}))
 app.use(methodOverride('_method'))
